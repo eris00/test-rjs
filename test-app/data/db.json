@@ -1,0 +1,25 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Uvod u C",
+            "author": "Igor Djurovic",
+            "izdanje": "3",
+            "brStranica": 250
+        },
+        {
+            "id": 2,
+            "title": "Uvod u Java",
+            "author": "Marko Simeunovic",
+            "izdanje": "1",
+            "brStranica": 600
+        },
+        {
+            "id": 3,
+            "title": "VBA programming",
+            "author": "Jakov Crnkovic",
+            "izdanje": "4",
+            "brStranica": 420
+        }
+    ]
+}
