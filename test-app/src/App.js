@@ -43,8 +43,8 @@ function App() {
       
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/scan" element={<Scan handleSubmit={handleSubmit} queryId={queryId} setQueryId={setQueryId} />} />
-        <Route path="/product" element={<Product />} />
+        <Route path="/scan" element={<Scan handleSubmit={handleSubmit} queryId={queryId} setQueryId={setQueryId} products={products} />} />
+        <Route path="/product" element={<Product products={products} />} />
         <Route path="/about" element={<About />} />
         <Route path="/unavailable" element={<Unavailable />} />
         <Route path="*" element={<ErrorPage />} />

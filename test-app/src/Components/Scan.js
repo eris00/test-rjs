@@ -2,11 +2,21 @@ import React from 'react'
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import { useNavigate } from 'react-router-dom';
+
+function Scan({handleSubmit, queryId, setQueryId, products}) {
+
+  let navigate = useNavigate();
 
 
-function Scan({handleSubmit, queryId, setQueryId}) {
-
-
+  let handleNavigate = () => {
+    if (products) {
+      navigate("/product")
+    } else {
+      navigate("/unavailable")
+    }
+    
+  }
 
   return (
     <Box sx={{ width:"100%", marginTop:"60%", marginLeft:"5%"}}>
@@ -22,7 +32,7 @@ function Scan({handleSubmit, queryId, setQueryId}) {
         onChange={(e) => {setQueryId(e.target.value)}}
         value={queryId}
         InputProps={{endAdornment:          
-          <Button type="submit"> OK </Button>
+          <Button type="submit" onClick={handleNavigate}> OK </Button>
         }}
     />
     </form>
