@@ -9,7 +9,6 @@ function Scan({handleSubmit, queryId, setQueryId, products}) {
 
   let navigate = useNavigate();
 
-
   let handleNavigate = () => {
     if (products) {
       navigate("/product")

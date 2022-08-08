@@ -19,7 +19,6 @@ function App() {
       try {
         const response = await api.get(`/products/${queryId}`);
         setProducts(response.data)
-        // console.log(response.data)
       } catch(err) {
 
           console.log(err.message)
